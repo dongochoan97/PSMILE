@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SMILE</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="vuotsangphai">普及率</string>
+
+</resources>

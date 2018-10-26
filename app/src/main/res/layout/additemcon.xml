@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+
+    android:background="@color/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:layout_marginTop="10dp"
+
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:text="名前と姓"
+                 android:textColor="@color/color_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <EditText
+                 android:id="@+id/edtNhaptenChild"
+                 android:paddingRight="15dp"
+                 android:paddingLeft="15dp"
+                 android:background="@drawable/edittext"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp" />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginTop="10dp"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:text="誕生年"
+                 android:textColor="@color/color_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <EditText
+                 android:id="@+id/edtnamsinhChild"
+                 android:paddingRight="15dp"
+                 android:paddingLeft="15dp"
+                 android:background="@drawable/edittext"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp" />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginTop="10dp"
+
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:text="セックス"
+                 android:textColor="@color/color_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <LinearLayout
+                     android:layout_weight="1"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content">
+                     <Button
+                         android:id="@+id/btnGtNam"
+                         android:text="男性"
+                         android:layout_marginRight="5dp"
+                         android:textColor="@color/color_dots_red"
+                         android:background="@drawable/buttonregister"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_weight="1"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content">
+                     <Button
+                         android:text="女性"
+                         android:id="@+id/btnGtNu"
+                         android:textColor="@color/color_dots_red"
+                         android:layout_marginRight="2.5dp"
+                         android:layout_marginLeft="2.5dp"
+                         android:background="@drawable/buttonfacebook"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_weight="1"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content">
+                     <Button
+                         android:text="その他"
+                         android:id="@+id/btnGtKhac"
+                         android:layout_marginLeft="5dp"
+                         android:textColor="@color/color_dots_red"
+                         android:background="@drawable/buttonfacebook"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_marginTop="10dp"
+
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:text="診断名（複数選択可） :"
+                     android:textColor="@color/color_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <LinearLayout
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <LinearLayout
+                         android:layout_weight="1"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content">
+                         <Button
+                             android:id="@+id/btnbenh1"
+                             android:text="ADHD"
+                             android:layout_marginRight="5dp"
+                             android:textColor="@color/color_dots_red"
+                             android:background="@drawable/buttonregister"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+                     </LinearLayout>
+                     <LinearLayout
+                         android:layout_weight="1"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content">
+                         <Button
+                             android:text="LD（学習障害）"
+                             android:id="@+id/btnbenh2"
+                             android:textColor="@color/color_dots_red"
+                             android:layout_marginRight="2.5dp"
+                             android:layout_marginLeft="2.5dp"
+                             android:background="@drawable/buttonfacebook"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+                     </LinearLayout>
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_marginTop="10dp"
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <LinearLayout
+                         android:layout_weight="1"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content">
+                         <Button
+                             android:id="@+id/btnbenh3"
+                             android:text="自閉症（スペクトラム）"
+                             android:layout_marginRight="5dp"
+                             android:textColor="@color/color_dots_red"
+                             android:background="@drawable/buttonfacebook"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+                     </LinearLayout>
+                     <LinearLayout
+                         android:layout_weight="1"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content">
+                         <Button
+                             android:id="@+id/btnbenh4"
+                             android:text="MR（精神発達遅滞）"
+                             android:textColor="@color/color_dots_red"
+                             android:layout_marginRight="2.5dp"
+                             android:layout_marginLeft="2.5dp"
+                             android:background="@drawable/buttonfacebook"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+                     </LinearLayout>
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_marginTop="10dp"
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <LinearLayout
+                         android:layout_weight="1"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content">
+                         <Button
+                             android:text="染色体異常"
+                             android:id="@+id/btnbenh5"
+                             android:layout_marginRight="5dp"
+                             android:textColor="@color/color_dots_red"
+                             android:background="@drawable/buttonfacebook"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+                     </LinearLayout>
+                     <LinearLayout
+                         android:layout_weight="1"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content">
+                         <Button
+                             android:text="その他"
+                             android:id="@+id/btnbenh6"
+                             android:textColor="@color/color_dots_red"
+                             android:layout_marginRight="2.5dp"
+                             android:layout_marginLeft="2.5dp"
+                             android:background="@drawable/buttonfacebook"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+                     </LinearLayout>
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_marginTop="10dp"
+
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:text="詳細な情報"
+                     android:textColor="@color/color_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <EditText
+                     android:id="@+id/edtthongtinconChild"
+                     android:background="@drawable/edittext"
+                     android:paddingRight="15dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="100dp" />
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+         <LinearLayout
+             android:gravity="center"
+             android:layout_marginTop="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+             <Button
+                 android:text="完了"
+                 android:id="@+id/btnSavechild"
+                 android:background="@drawable/buttonregister"
+                 android:layout_width="150dp"
+                 android:layout_height="40dp" />
+         </LinearLayout>
+     </LinearLayout>
+ </ScrollView>
+
+</LinearLayout>
